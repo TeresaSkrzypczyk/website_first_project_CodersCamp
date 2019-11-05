@@ -1,0 +1,47 @@
+.btn {
+    border: none;
+    border-radius: $border-radius;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1rem;
+    transition: $transition-primary;
+    width: 100%;
+
+    &.btn--primary {
+        background-color: $color-primary;
+        margin-top: 1rem;
+        color: $color-white;
+
+        &:hover {
+          background-color: darken($color-primary, 10%);
+        }
+    }
+}
+
+.btn.btn--primary.gitHub, .btn.btn--primary.submit, .btn.btn--primary.heroku {
+    text-decoration: none;
+    i {
+        margin-right: 0.5rem;
+    }
+}
+
+.btn.btn--primary.linkedIn {
+    background-color: $color-text;
+    text-decoration: none;
+    width: 50%;
+    margin-left: 25%;
+
+    i {
+        margin-right: 0.5rem;
+    }
+
+    &:hover {
+        background-color: lighten($color-text, 20%);
+      }
+}
+
+

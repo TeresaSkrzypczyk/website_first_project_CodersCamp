@@ -1,0 +1,50 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3rem;
+
+  .person {
+    color: $color-white;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding: 0.25rem 0.5rem;
+  }
+
+  .flex1 {
+    display: none;
+  }
+
+  ul {
+    display: none;
+    list-style-type: none;
+
+    li {
+      border-radius: $border-radius;
+      cursor: pointer;
+      display: inline-block;
+      font-weight: 700;
+      margin-left: 1rem;
+      padding: 0.25rem 0.5rem;
+      transition: $transition-primary;
+
+      a {
+        text-decoration: none;
+        color: $color-text;
+      }
+
+      &:hover {
+        background-color: $color-white;
+      }
+    }
+  }
+
+  @media (min-width: $screen-xs) {
+    justify-content: space-between;
+
+    .flex1, ul {
+      display: block;
+    }
+  }
+}

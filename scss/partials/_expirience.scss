@@ -1,0 +1,25 @@
+.experience-education {
+    padding: 0 0.5rem;
+
+    h2 {
+        margin-bottom: 2rem;
+    }
+
+    a {
+        color: $color-text;
+
+        &:hover {
+            color: $color-text;
+            text-decoration: none;
+        }
+    }
+
+    ul {
+        line-height: 1.6;
+        list-style: none;
+    }
+
+    p {
+        line-height: 1.6;
+    }
+}
